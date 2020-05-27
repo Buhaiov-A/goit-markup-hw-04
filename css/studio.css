@@ -37,6 +37,20 @@
   display: flex;
 }
 
+.section-feature {
+  padding-top: 94px;
+}
+
+.container-feature {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ececec;
+}
+
 .feature-image {
   background-color: var(--accent);
   width: 270px;
@@ -62,10 +76,11 @@
   margin-right: 30px;
 }
 
-.text {
+.feature-text {
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.71;
   margin: 0;
+  text-align: left;
 }
 
 .feature .link {
@@ -172,6 +187,7 @@
 .team-cards .position {
   color: var(--primary-text-color);
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0;
