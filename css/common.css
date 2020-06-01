@@ -31,6 +31,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -224,6 +235,8 @@ body {
 
   display: block;
   text-transform: uppercase;
+
+  margin-bottom: 21px;
 }
 
 .addr-footer {
@@ -234,6 +247,49 @@ body {
   text-decoration: none;
 
   margin-bottom: 9px;
+}
+
+/* копипаст */
+.social-link {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+}
+
+.link-box {
+  width: 44px;
+  height: 44px;
+}
+
+.link-box:not(:last-child) {
+  margin-right: 10px;
+}
+/* конец копипаста */
+
+.social-footer {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  --color4: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social-footer:hover,
+.social-footer:focus {
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.icon-image {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
 }
 
 /* Copyright */
