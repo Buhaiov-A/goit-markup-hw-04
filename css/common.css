@@ -164,7 +164,7 @@ body {
   margin-left: auto;
 }
 
-.addr-nav .addr-link {
+.addr-link {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -173,12 +173,20 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 
+  display: inline-flex;
+  align-items: center;
+
   /* outline: 2px solid red; */
 }
 
-.addr-nav .addr-link:hover,
-.addr-nav .addr-link:focus {
+.addr-link:hover,
+.addr-link:focus {
   color: var(--accent);
+}
+
+.icon.addr-link {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Footer */

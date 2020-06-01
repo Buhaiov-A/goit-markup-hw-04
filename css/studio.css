@@ -9,13 +9,18 @@
 
 /* Hero */
 .hero {
-  background-color: var(--footer-bg-color);
   text-align: center;
 
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
+
+  background-color: var(--footer-bg-color);
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/header.jpg);
 }
 
 .hero-title {
@@ -51,13 +56,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.feature-image {
-  background-color: var(--accent);
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-}
-
 .feature .title {
   font-weight: 700;
   font-size: 14px;
@@ -76,15 +74,23 @@
   margin-right: 30px;
 }
 
+.bg-icon {
+  display: flex;
+  background-color: var(--secondary--bg-color);
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .feature-text {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
   text-align: left;
-}
-
-.feature .link {
-  color: var(--secondary--bg-color);
 }
 
 .feature .link:hover,
@@ -198,18 +204,38 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 207px;
+  width: 206px;
+}
+
+.link-box {
+  width: 44px;
+  height: 44px;
+  /* padding: 12px; */
 }
 
 .link-box:not(:last-child) {
   margin-right: 10px;
 }
 
-.link-image {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-color: var(--secondary--bg-color);
+.social-icon {
+  display: flex;
+  /* width: 40px;
+  height: 40px; */
+
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--accent);
+  border-radius: 50%;
+}
+
+.icon-image {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
 }
 
 /* Clients */
