@@ -217,7 +217,7 @@
 } */
 
 .social-icon {
-  display: flex;
+  display: inline-flex;
 
   padding: 0;
   margin: 0;
@@ -228,6 +228,7 @@
   --color4: var(--white-color);
   border-radius: 50%;
   background-color: var(--accent);
+  padding: 12px;
 }
 
 /* .icon-image {

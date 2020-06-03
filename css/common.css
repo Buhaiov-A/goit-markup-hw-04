@@ -266,8 +266,8 @@ body {
 }
 
 .social-footer {
-  display: flex;
-  padding: 0;
+  display: inline-flex;
+  padding: 12px;
   margin: 0;
   --color4: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
@@ -287,7 +287,6 @@ body {
 .icon-image {
   width: 20px;
   height: 20px;
-  margin: 12px;
 }
 
 /* Copyright */
